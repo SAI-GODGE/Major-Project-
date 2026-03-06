@@ -219,7 +219,6 @@ sudo systemctl start node_exporter
 
 
 Check metrics
-
 http://localhost:9100/metrics
 
 ---
@@ -237,7 +236,6 @@ targets: ["localhost:9100"]
 
 
 Access Prometheus
-
 http://localhost:9090
 
 
@@ -252,7 +250,6 @@ sudo systemctl start grafana-server
 
 
 Access Grafana
-
 http://localhost:3000
 
 
