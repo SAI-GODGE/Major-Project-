@@ -172,5 +172,7 @@ linux-server-monitoring-system/
 │   ├── grafana-dashboard.png
 │   ├── node-exporter.png
 │   └── prometheus-ui.png
-
+│
+└── docs/
+    └── project-report.docx
 
