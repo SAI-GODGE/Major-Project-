@@ -1,4 +1,4 @@
-# 🚀 Linux Server Monitoring & Alerting System
+# 🚀 Self-Healing Linux Server Monitoring & Alerting System
 
 ## 📌 Project Overview
 This project implements an automated **Linux Server Monitoring System** using Bash scripting and open-source monitoring tools.  
@@ -179,30 +179,29 @@ linux-server-monitoring/
 # ⚙ Installation & Setup
 
 ## 1️⃣ Clone Repository
-git clone https://github.com/SAI-GODGE/linux-server-monitoring.git
 
-cd linux-server-monitoring
-
----
+```bash
+git clone https://github.com/SAI-GODGE/Major Project.git
+cd self-healing-linux-server
+```
 
 # 2️⃣ Make Scripts Executable
-chmod +x *.sh
 
----
+```bash
+chmod +x *.sh
+```
 
 # 3️⃣ Setup Cron Job
 
-Open cron configuration
-
+```bash
 crontab -e
-
+```
 
 Add monitoring task
-
-*/10 * * * * /path/to/disk_monitor.sh
-
-*/10 * * * * /path/to/service_monitor.sh
-
+```bash
+*/10 * * * * /path/to/disk_monitor.sh >> /home/its_sai/linux-server-monitoring/monitor.log 2>&1
+*/10 * * * * /path/to/service_monitor.sh >> /home/its_sai/linux-server-monitoring/monitor.log 2>&1
+```
 
 This runs monitoring every **10 minutes**.
 
@@ -211,46 +210,104 @@ This runs monitoring every **10 minutes**.
 # 📊 Monitoring Stack Setup
 
 ## Install Node Exporter
+
+```bash
 sudo dnf install node_exporter -y
-
 sudo systemctl enable node_exporter
-
 sudo systemctl start node_exporter
+```
 
-
-Check metrics
+Check in browser:
 http://localhost:9100/metrics
 
 ---
 
 ## Install Prometheus
 
-Configure `prometheus.yml`
+Configure `prometheus.yml`:
 
+```yaml
 scrape_configs:
+  - job_name: "node_exporter"
+    static_configs:
+      - targets: ["localhost:9100"]
+```
 
-job_name: "node_exporter"
-static_configs:
-
-targets: ["localhost:9100"]
-
-
-Access Prometheus
+Access Prometheus:
 http://localhost:9090
-
 
 ---
 
 ## Install Grafana
+
+```bash
 sudo dnf install grafana -y
-
 sudo systemctl enable grafana-server
-
 sudo systemctl start grafana-server
+```
 
-
-Access Grafana
+Access Grafana:
 http://localhost:3000
+
+Add Prometheus as Data Source  
+Import Dashboard: **Node Exporter Full (ID: 1860)**
+
+---
+
+
+---
+
+# 📸 Screenshots
+
+### Grafana Dashboard
+
+![Grafana Dashboard](Screenshots/grafana-dashboard.png)
+
+### Node Exporter Metrics
+
+![Node Exporter](Screenshots/node-exporter.png)
+
+### Prometheus UI
+
+![Prometheus](Screenshots/prometheus-ui.png)
+
+---
+
+# 🔔 Alert System
+
+The monitoring scripts send alerts when:
+
+- Disk usage exceeds defined threshold
+- Important services stop running
+
+Alerts are sent using:
+
+- Telegram Bot notifications
+
+---
+
+# 📈 Features
+
+✔ Disk space monitoring  
+✔ Service monitoring  
+✔ Telegram alerts  
+✔ Automated cron execution  
+✔ Prometheus metrics collection  
+✔ Grafana monitoring dashboard  
+
+---
+
+# 👨‍💻 Author
+
+**Tejas Kanade**
+**Saiprasad Godge**
+**Omkar Ghongde**
+
+Major Project – Self-Healing Linux Server Monitoring & Alerting System
+B.Tech Computer Science
+
+---
+
 
 
 
