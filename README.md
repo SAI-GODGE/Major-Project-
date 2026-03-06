@@ -200,6 +200,7 @@ crontab -e
 Add monitoring task
 
 */10 * * * * /path/to/disk_monitor.sh
+
 */10 * * * * /path/to/service_monitor.sh
 
 
@@ -211,7 +212,9 @@ This runs monitoring every **10 minutes**.
 
 ## Install Node Exporter
 sudo dnf install node_exporter -y
+
 sudo systemctl enable node_exporter
+
 sudo systemctl start node_exporter
 
 
@@ -231,6 +234,7 @@ static_configs:
 
 targets: ["localhost:9100"]
 
+
 Access Prometheus
 
 http://localhost:9090
@@ -240,7 +244,9 @@ http://localhost:9090
 
 ## Install Grafana
 sudo dnf install grafana -y
+
 sudo systemctl enable grafana-server
+
 sudo systemctl start grafana-server
 
 
