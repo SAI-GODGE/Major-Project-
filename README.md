@@ -182,3 +182,9 @@ linux-server-monitoring/
 git clone https://github.com/SAI-GODGE/linux-server-monitoring.git
 
 cd linux-server-monitoring
+
+---
+
+# 2️⃣ Make Scripts Executable
+chmod +x *.sh
+
