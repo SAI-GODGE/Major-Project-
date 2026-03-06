@@ -219,6 +219,7 @@ sudo systemctl start node_exporter
 
 
 Check metrics
+
 http://localhost:9100/metrics
 
 ---
@@ -251,6 +252,7 @@ sudo systemctl start grafana-server
 
 
 Access Grafana
+
 http://localhost:3000
 
 
