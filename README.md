@@ -173,8 +173,3 @@ linux-server-monitoring/
     ├── node-exporter.png
     └── prometheus-ui.png
 ```
-    ├── grafana-dashboard.png
-    ├── node-exporter.png
-    └── prometheus-ui.png
-```
-
