@@ -152,9 +152,11 @@ This project demonstrates **basic DevOps monitoring practices** used in real pro
              v                                 v
      Telegram Notification              Email Notification
 
-Project Structure
+## 📁 Project Structure
+
+```
 linux-server-monitoring/
-|
+│
 ├── README.md
 │
 ├── disk_monitor.sh
@@ -169,4 +171,5 @@ linux-server-monitoring/
     ├── grafana-dashboard.png
     ├── node-exporter.png
     └── prometheus-ui.png
+```
 
