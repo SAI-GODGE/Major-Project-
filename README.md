@@ -300,7 +300,7 @@ Alerts are sent using:
 
 ✔ Disk space monitoring  
 ✔ Service monitoring  
-✔ Telegram alerts & Email Alerts 
+✔ Telegram alerts & Email Alerts  
 ✔ Automated cron execution  
 ✔ Prometheus metrics collection  
 ✔ Grafana monitoring dashboard
@@ -325,7 +325,9 @@ The Self-Healing Linux Server enhances reliability and operational efficiency in
 # 👨‍💻 Author
 
 **Tejas Kanade**
+
 **Saiprasad Godge**
+
 **Omkar Ghongde**
 
 Major Project – Self-Healing Linux Server Monitoring & Alerting System
