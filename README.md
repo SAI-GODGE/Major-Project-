@@ -8,6 +8,7 @@ The solution integrates:
 
 - Bash monitoring scripts
 - Cron automation
+- Email Alerts
 - Telegram alerts
 - Prometheus metrics collection
 - Node Exporter system metrics
@@ -283,17 +284,41 @@ The monitoring scripts send alerts when:
 Alerts are sent using:
 
 - Telegram Bot notifications
+- Email Notifications
 
 ---
+
+### Alerts are triggered when:
+
+- Disk usage exceeds defined threshold  
+- A monitored service stops running  
+
+---
+
 
 # 📈 Features
 
 ✔ Disk space monitoring  
 ✔ Service monitoring  
-✔ Telegram alerts  
+✔ Telegram alerts & Email Alerts 
 ✔ Automated cron execution  
 ✔ Prometheus metrics collection  
-✔ Grafana monitoring dashboard  
+✔ Grafana monitoring dashboard
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates automation, monitoring, and self-healing capabilities in Linux systems using open-source tools.
+
+By integrating Bash scripting with Prometheus, Node Exporter, and Grafana, the system ensures:
+
+- Improved server uptime  
+- Reduced manual intervention  
+- Real-time monitoring and alerting  
+- Faster issue detection and recovery  
+
+The Self-Healing Linux Server enhances reliability and operational efficiency in Linux-based environments.
 
 ---
 
