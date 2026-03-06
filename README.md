@@ -154,24 +154,22 @@ This project demonstrates **basic DevOps monitoring practices** used in real pro
 
 
 # 📂 Project Structure
-
-linux-server-monitoring-system/
+linux-server-monitoring/
 │
 ├── README.md
 │
-├── scripts/
-│   ├── disk_monitor.sh
-│   ├── service_monitor.sh
-│   ├── apache_monitor.sh
-│   └── disk_telegram_alert.sh
+├── disk_monitor.sh
+├── disk_telegram_alert.sh
+├── service_monitor.sh
+├── apache_monitor.sh
 │
 ├── prometheus/
 │   └── prometheus.yml
 │
-├── screenshots/
-│   ├── grafana-dashboard.png
-│   ├── node-exporter.png
-│   └── prometheus-ui.png
+└── Screenshots/
+    ├── grafana-dashboard.png
+    ├── node-exporter.png
+    └── prometheus-ui.png
 │
 └── docs/
     └── project-report.docx
