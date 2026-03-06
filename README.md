@@ -151,10 +151,7 @@ This project demonstrates **basic DevOps monitoring practices** used in real pro
              |                                 |
              v                                 v
      Telegram Notification              Email Notification
-
-
-# 📂 Project Structure
-
+     
 linux-server-monitoring/
 │
 ├── README.md
