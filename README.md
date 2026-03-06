@@ -180,4 +180,5 @@ linux-server-monitoring/
 
 ## 1️⃣ Clone Repository
 git clone https://github.com/SAI-GODGE/linux-server-monitoring.git
+
 cd linux-server-monitoring
