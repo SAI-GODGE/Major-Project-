@@ -158,6 +158,7 @@ This project demonstrates **basic DevOps monitoring practices** used in real pro
 linux-server-monitoring/
 │
 ├── README.md
+├── .gitignore
 │
 ├── disk_monitor.sh
 ├── disk_telegram_alert.sh
@@ -168,6 +169,10 @@ linux-server-monitoring/
 │   └── prometheus.yml
 │
 └── Screenshots/
+    ├── grafana-dashboard.png
+    ├── node-exporter.png
+    └── prometheus-ui.png
+```
     ├── grafana-dashboard.png
     ├── node-exporter.png
     └── prometheus-ui.png
