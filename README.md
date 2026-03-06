@@ -188,3 +188,14 @@ cd linux-server-monitoring
 # 2️⃣ Make Scripts Executable
 chmod +x *.sh
 
+---
+
+# 3️⃣ Setup Cron Job
+
+Open cron configuration
+
+crontab -e
+
+
+Add monitoring task
+
