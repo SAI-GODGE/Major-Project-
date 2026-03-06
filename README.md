@@ -154,7 +154,7 @@ This project demonstrates **basic DevOps monitoring practices** used in real pro
 
 Project Structure
 linux-server-monitoring/
-
+|
 ├── README.md
 │
 ├── disk_monitor.sh
